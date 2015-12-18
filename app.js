@@ -7,9 +7,9 @@ var ejs = require('ejs');
 //Lets define a port we want to listen to
 const PORT=8080; 
 
-
+dispatcher.setStaticDirname(__dirname);
 //For all your static (js/css/images/etc.) set the directory name (relative path).
-dispatcher.setStatic('public');
+dispatcher.setStatic('resources');
 
 //A sample GET request    
 dispatcher.onGet("/page1", function(req, res) {
